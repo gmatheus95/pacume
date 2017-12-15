@@ -28,7 +28,7 @@ public class Trending extends FragmentActivity {
 
         List<DishNModel> dishNModels = new ArrayList<>();
         ImageView imageView = null;
-        DishNModel dishNModel = new DishNModel("Dogao Triplo", "Tropical", imageView);
+        DishNModel dishNModel = new DishNModel("Stacker Triplo", "Burguer King", imageView);
         dishNModels.add(dishNModel);
 
         DishAdapter dishAdapter = new

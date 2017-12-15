@@ -11,13 +11,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingTop="98dp">
+        android:paddingTop="60dp">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/login"/>
+            android:src="@mipmap/logo"/>
 
         <EditText
             android:id="@+id/etUserName"
