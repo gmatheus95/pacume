@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mvp.main_project.pacumeteam.pacume_project.EstablishmentActivity">
+    tools:context="mvp.main_project.pacumeteam.pacume_project.DishActivity">
 
     <android.widget.RelativeLayout
         android:layout_width="match_parent"
@@ -18,10 +18,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="30dp"
-            android:text="Burger King" />
+            android:text="Stacker Triplo" />
 
         <ImageView
-            android:id="@+id/imgEstablishment"
+            android:id="@+id/imgDishes"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/textView"
@@ -35,9 +35,9 @@
             style="@style/labelTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imgEstablishment"
+            android:layout_alignBottom="@+id/imgDishes"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/imgEstablishment"
+            android:layout_alignTop="@+id/imgDishes"
             android:gravity="center"
             android:minWidth="50dp"
             android:text="&lt;"
@@ -48,9 +48,9 @@
             style="@style/labelTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imgEstablishment"
+            android:layout_alignBottom="@+id/imgDishes"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/imgEstablishment"
+            android:layout_alignTop="@+id/imgDishes"
             android:gravity="center"
             android:minWidth="50dp"
             android:text="&gt;" />
@@ -60,27 +60,27 @@
             android:id="@+id/txtDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imgEstablishment"
+            android:layout_below="@id/imgDishes"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="30dp"
             android:gravity="left"
-            android:lines="8"
-            android:maxLines="8"
-            android:text="O melhor fastfood que você pode encontrar! Whopper Duplo por apenas 15,99.\n\n\n
+            android:lines="6"
+            android:maxLines="6"
+            android:text="Descrição: Delicioso lanche com três hamburgueres e muito queijo\n\nCategoria: Lanches\n\nEstabelecimento: Burguer King" />
 
-Passeio São Carlos\n\n
-Av. Dr. Francisco Pereira Lopes, 1701 · (16) 2397-0320" />
 
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            android:name="com.google.android.gms.maps.MapFragment"
+        <Button
+            android:id="@+id/btnGoToEstablishment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/txtDescription"
-            android:id="@+id/map"
-            android:layout_marginHorizontal="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="30dp"
-            />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30px"
+            android:text="Ir para Estabelecimento" />
+
+
 
     </android.widget.RelativeLayout>
 
 </ScrollView>
+

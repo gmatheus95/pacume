@@ -45,11 +45,9 @@ public class EstablishmentActivity extends AppCompatActivity implements OnMapRea
         imageArray = new int[8];
         imageArray[0] = R.mipmap.bkfront1;
         imageArray[1] = R.mipmap.bkfront2;
-        imageArray[2] = R.mipmap.sandwich1;
-        imageArray[3] = R.mipmap.sandwich2;
 
         startIndex = 0;
-        endIndex = 3;
+        endIndex = 1;
 
         txtLeft=findViewById(R.id.txtPrevious);
         txtLeft.setOnClickListener(new View.OnClickListener() {
