@@ -2,6 +2,7 @@ package mvp.main_project.pacumeteam.pacume_project;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -79,6 +80,9 @@ public class LoginActivity extends AppCompatActivity {
                     Snackbar snackbar = Snackbar.make(view, "Login Realizado com Sucesso", Snackbar.LENGTH_SHORT);
                     cleanDataLogin();
                     snackbar.show();
+                    // Start Establishment Activity (for now)
+                    Intent intent = new Intent(getApplication(), EstablishmentActivity.class);
+                    startActivity(intent);
                 } else {
                     mDialogNoLogin.setMessage("Falha ao efetuar login");
                     mDialogNoLogin.show();

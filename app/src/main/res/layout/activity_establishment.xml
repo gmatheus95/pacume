@@ -19,12 +19,12 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
-            android:text="Nome do Estabelecimento" />
+            android:text="Burger King" />
 
         <ImageView
             android:id="@+id/imgEstablishment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_below="@+id/textView"
             android:layout_marginEnd="50dp"
             android:layout_marginStart="50dp"
@@ -41,7 +41,7 @@
             android:layout_alignTop="@+id/imgEstablishment"
             android:gravity="center"
             android:minWidth="50dp"
-            android:text="<"
+            android:text="&lt;"
             android:textAlignment="center" />
 
         <TextView
@@ -54,9 +54,10 @@
             android:layout_alignTop="@+id/imgEstablishment"
             android:gravity="center"
             android:minWidth="50dp"
-            android:text=">" />
+            android:text="&gt;" />
 
         <TextView
+            style="@style/labelText"
             android:id="@+id/txtDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,14 +67,20 @@
             android:gravity="left"
             android:lines="8"
             android:maxLines="8"
-            android:text="Descrição\n\nTelefone\n\nEndereço\n\nEtc" />
+            android:text="O melhor fastfood que você pode encontrar! Whopper Duplo por apenas 15,99.\n\n\n
+
+Passeio São Carlos\n\n
+Av. Dr. Francisco Pereira Lopes, 1701 · (16) 2397-0320" />
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
             android:name="com.google.android.gms.maps.MapFragment"
             android:layout_below="@id/txtDescription"
             android:id="@+id/map"
+            android:layout_marginHorizontal="30dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="200dp"
+            android:layout_marginBottom="30dp"
+            />
 
     </android.widget.RelativeLayout>
 
