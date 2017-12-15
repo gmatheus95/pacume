@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DishCell"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/mainDish">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:id="@+id/DishImagem"
+            android:layout_height="56dp"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/sandwich1"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPratoNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dogão Duplo"
+                android:layout_marginLeft="12dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvEstabelecimentoNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Tropical Lanches"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

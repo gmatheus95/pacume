@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                     cleanDataLogin();
                     snackbar.show();
                     // Start Establishment Activity (for now)
-                    Intent intent = new Intent(getApplication(), EstablishmentActivity.class);
+                    Intent intent = new Intent(getApplication(), Trending.class);
                     startActivity(intent);
                 } else {
                     mDialogNoLogin.setMessage("Falha ao efetuar login");
